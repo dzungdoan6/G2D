@@ -170,7 +170,7 @@ void handleWeatherMenu(std::string menu_name)
 {
 	const int menu_item_number = 6;
 
-	std::string menu_list[menu_item_number] = { "DAY", "CLEAR", "NIGHT", "RAIN", "SNOW", "" };
+	std::string menu_list[menu_item_number] = { "DAY", "NIGHT", "CLEAR",  "RAIN", "SNOW", "" };
 
 	DWORD wait_time = 150;
 
@@ -209,15 +209,16 @@ void handleWeatherMenu(std::string menu_name)
 				TIME::SET_CLOCK_TIME(12, 0, 0); // set time = 12:00
 				break;
 
-				// CLEAR
+				// NIGHT
 			case 1:
-				GAMEPLAY::CLEAR_OVERRIDE_WEATHER();
-				GAMEPLAY::SET_OVERRIDE_WEATHER("CLEAR");
+				TIME::SET_CLOCK_TIME(23, 0, 0); // set time = 23:00
+				
 				break;
 
-				// NIGHT
+				// CLEAR
 			case 2:
-				TIME::SET_CLOCK_TIME(23, 0, 0); // set time = 23:00
+				GAMEPLAY::CLEAR_OVERRIDE_WEATHER();
+				GAMEPLAY::SET_OVERRIDE_WEATHER("CLEAR");
 				break;
 
 				// RAIN
@@ -434,10 +435,10 @@ void teleportToMarker()
 	}
 }
 
-void handle_menu()
+void handleMainMenu()
 {
 	const int menu_item_number = 3;
-	std::string menu_name = "EFFECT MODIFICATION TOOL";
+	std::string menu_name = "CONDITION TOOL";
 	std::string menu_list[menu_item_number] = { "WEATHER & TIME", "VEHICLE & PEDESTRIAN DENSITY", "TELEPORT TO MARKER"};
 
 	DWORD wait_time = 150;
@@ -514,7 +515,7 @@ void main()
 		
 		if (switchPressed())
 		{
-			handle_menu();
+			handleMainMenu();
 		}
 
 		updateFeatures();

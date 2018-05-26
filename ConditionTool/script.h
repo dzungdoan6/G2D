@@ -36,7 +36,7 @@ void drawMenuLine(std::string caption, float line_width, float line_height,
 	bool title, bool rescale_text = true);
 
 /******************************** Functions that process menu ********************************/
-void handle_menu(); // display main menu
+void handleMainMenu(); // display main menu
 void handleTrafficDensityMenu(std::string menu_name); // display menu of traffic density
 void handleWeatherMenu(std::string menu_name); // display menu of weather
 
