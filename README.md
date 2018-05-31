@@ -101,7 +101,7 @@ Video tutorial is [here](https://youtu.be/Tf9MXrZ2NFM)
 License
 ============
 
-Our tool and data that we provide is for research and education purpose, any commercial use is strictly prohibited.
+Our tool and data are only for research and education purposes, any commercial uses are strictly prohibited.
 
 As a courtesy towards Take-Two Interactive and Rockstar Games, please purchase Grand Theft Auto V if you use data and the tool.
 
