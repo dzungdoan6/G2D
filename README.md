@@ -102,6 +102,7 @@ License
 ============
 
 Our tool and data that we provide is for research and education purpose, any commercial use is strictly prohibited.
+
 As a courtesy towards Take-Two Interactive and Rockstar Games, please buy Grand Theft Auto V if you use data and the tool.
 
 Acknowledgement
