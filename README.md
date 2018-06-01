@@ -11,7 +11,7 @@ GTAVision contains three sub-tools
 2. GTAVision-Trajectory.asi   : the tool facilitates users to construct sparse/dense trajectory
 3. CreateSparseTrajectory.exe : the program creates sparse trajectory, given vertex and vertex order lists.
 
-For more technical detail about the tool, please refer to our document, if you find our tool is useful, please cite:
+For more technical detail about the tool, please refer to our report. If you find our tool or our dataset is useful, please cite:
 
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
