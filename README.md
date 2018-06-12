@@ -26,6 +26,9 @@ Our tool only works for Windows OS.
 
 You can either use the pre-built binaries for Window or manually build the source code
 
+[Recommended] Invisibility Cloak (https://www.gta5-mods.com/scripts/invisibility-cloak): A mod could make protagonist invisible
+[Recommended] 100% game save (https://www.gta5-mods.com/misc/100-save-game): To open the whole map of the game
+
 ------------------
 Pre-built Binaries
 ------------------
