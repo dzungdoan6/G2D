@@ -11,32 +11,18 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CreateSparseTrajectory", "C
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x64 = Debug|x64
-		Debug|x86 = Debug|x86
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{AF219C32-AFFD-4CA9-800D-ADA1AAE0303D}.Debug|x64.ActiveCfg = Release|x64
-		{AF219C32-AFFD-4CA9-800D-ADA1AAE0303D}.Debug|x64.Build.0 = Release|x64
-		{AF219C32-AFFD-4CA9-800D-ADA1AAE0303D}.Debug|x86.ActiveCfg = Release|Win32
-		{AF219C32-AFFD-4CA9-800D-ADA1AAE0303D}.Debug|x86.Build.0 = Release|Win32
 		{AF219C32-AFFD-4CA9-800D-ADA1AAE0303D}.Release|x64.ActiveCfg = Release|x64
 		{AF219C32-AFFD-4CA9-800D-ADA1AAE0303D}.Release|x64.Build.0 = Release|x64
 		{AF219C32-AFFD-4CA9-800D-ADA1AAE0303D}.Release|x86.ActiveCfg = Release|Win32
 		{AF219C32-AFFD-4CA9-800D-ADA1AAE0303D}.Release|x86.Build.0 = Release|Win32
-		{A4BC6DB3-D5AE-465C-BA04-B1ED58F3F113}.Debug|x64.ActiveCfg = Release|x64
-		{A4BC6DB3-D5AE-465C-BA04-B1ED58F3F113}.Debug|x64.Build.0 = Release|x64
-		{A4BC6DB3-D5AE-465C-BA04-B1ED58F3F113}.Debug|x86.ActiveCfg = Release|Win32
-		{A4BC6DB3-D5AE-465C-BA04-B1ED58F3F113}.Debug|x86.Build.0 = Release|Win32
 		{A4BC6DB3-D5AE-465C-BA04-B1ED58F3F113}.Release|x64.ActiveCfg = Release|x64
 		{A4BC6DB3-D5AE-465C-BA04-B1ED58F3F113}.Release|x64.Build.0 = Release|x64
 		{A4BC6DB3-D5AE-465C-BA04-B1ED58F3F113}.Release|x86.ActiveCfg = Release|Win32
 		{A4BC6DB3-D5AE-465C-BA04-B1ED58F3F113}.Release|x86.Build.0 = Release|Win32
-		{DA543FF9-7073-4A16-8DDF-DABFF2297B27}.Debug|x64.ActiveCfg = Release|x64
-		{DA543FF9-7073-4A16-8DDF-DABFF2297B27}.Debug|x64.Build.0 = Release|x64
-		{DA543FF9-7073-4A16-8DDF-DABFF2297B27}.Debug|x86.ActiveCfg = Release|Win32
-		{DA543FF9-7073-4A16-8DDF-DABFF2297B27}.Debug|x86.Build.0 = Release|Win32
 		{DA543FF9-7073-4A16-8DDF-DABFF2297B27}.Release|x64.ActiveCfg = Release|x64
 		{DA543FF9-7073-4A16-8DDF-DABFF2297B27}.Release|x64.Build.0 = Release|x64
 		{DA543FF9-7073-4A16-8DDF-DABFF2297B27}.Release|x86.ActiveCfg = Release|Win32
