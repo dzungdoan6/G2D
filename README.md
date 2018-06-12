@@ -22,12 +22,13 @@ The dataset in our experiment section could be downloaded [here](https://goo.gl/
 
 Installation
 ============
-Our tool only works for Windows OS.
++ Our tool only works for Windows OS.
 
-You can either use the pre-built binaries for Window or manually build the source code
++ You can either use the pre-built binaries for Window or manually build the source code
+ 
++ [Recommended] Invisibility Cloak (https://www.gta5-mods.com/scripts/invisibility-cloak): A mod could make protagonist invisible
 
-[Recommended] Invisibility Cloak (https://www.gta5-mods.com/scripts/invisibility-cloak): A mod could make protagonist invisible
-[Recommended] 100% game save (https://www.gta5-mods.com/misc/100-save-game): To open the whole map of the game
++ [Recommended] 100% game save (https://www.gta5-mods.com/misc/100-save-game): To open the whole map of the game
 
 ------------------
 Pre-built Binaries
