@@ -1,6 +1,6 @@
 About
 ============
-G2D is an open-source tool which enables computer vision researchers to collect the dataset from Grand Theft Auto V. With the capability of accessing to the native functions of the game, researchers could directly interact with the tool while playing the game. In addition, researchers could gather the images rendered by the gameplay camera as well as its exact camera pose within the game coordinate.
+G2D is a tool that enables capturing videos from Grand Theft Auto V (GTA V), a popular role playing game set in an expansive virtual city. The target users of our tool are computer vision researchers who wish to collect hyper-realistic computer-generated imagery of a city from the street level, under controlled 6DOF camera poses and varying environmental conditions (weather, time of day, traffic density, etc.).
 
 
 Description
