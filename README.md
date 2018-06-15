@@ -18,7 +18,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 
-The dataset in our experiment section could be downloaded [here](https://goo.gl/DNzxHx)
+The dataset in our "Sample Application" section could be downloaded [here](https://goo.gl/DNzxHx)
 
 Installation
 ============
