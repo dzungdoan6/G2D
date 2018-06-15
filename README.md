@@ -1,17 +1,17 @@
 About
 ============
-G2D is a tool that enables capturing videos from Grand Theft Auto V (GTA V), a popular role playing game set in an expansive virtual city. The target users of our tool are computer vision researchers who wish to collect hyper-realistic computer-generated imagery of a city from the street level, under controlled 6DOF camera poses and varying environmental conditions (weather, time of day and traffic density).
+G2D is a software that enables capturing videos from Grand Theft Auto V (GTA V), a popular role playing game set in an expansive virtual city. The target users of our software are computer vision researchers who wish to collect hyper-realistic computer-generated imagery of a city from the street level, under controlled 6DOF camera poses and varying environmental conditions (weather, time of day and traffic density).
 
 
 Description
 ============
 
-G2D contains three sub-tools
+G2D contains three tools
 1. G2D-Condition.asi    : the tool enables users to change game's condition, e.g. time, weather and traffic density
 2. G2D-Trajectory.asi   : the tool facilitates users to construct sparse/dense trajectory
 3. CreateSparseTrajectory.exe : the program creates sparse trajectory, given vertex and vertex order lists.
 
-For more technical detail about the tool, please refer to our technical document. If you find our tool or our dataset is useful, please cite:
+For more technical detail about the software, please refer to our technical document. If you find our software or our dataset is useful, please cite:
 
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -22,7 +22,7 @@ The dataset in our "Sample Application" section could be downloaded [here](https
 
 Installation
 ============
-+ Our tool only works for Windows OS.
++ Our software only works for Windows OS.
 
 + You can either use the pre-built binaries for Window or manually build the source code
  
@@ -44,7 +44,7 @@ Build from Source
 
 0. Make sure you have:
     + Grand Theft Auto V purchased on Steam.
-    + Microsoft Visual Studio. The tool is developed in Microsoft Visual Studio Community 2017, 64-bit Windows 10 Education, but the code should work with older version of those.
+    + Microsoft Visual Studio. The software is developed in Microsoft Visual Studio Community 2017, 64-bit Windows 10 Education, but the code should work with older version of those.
     + Scripthook SDK (http://www.dev-c.com/gtav/scripthookv/). Actually the SDK is included already within folder dependencies/
 1. Open G2D.sln by Visual Studio.
 2. Build the solution.
@@ -105,9 +105,9 @@ Video tutorial is [here](https://youtu.be/Tf9MXrZ2NFM)
 License
 ============
 
-Our tool and data are only for research and education purposes, any commercial uses are strictly prohibited.
+Our software and data are only for research and education purposes, any commercial uses are strictly prohibited.
 
-As a courtesy towards Take-Two Interactive and Rockstar Games, please purchase Grand Theft Auto V if you use the tool and data.
+As a courtesy towards Take-Two Interactive and Rockstar Games, please purchase Grand Theft Auto V, if you use the software and data.
 
 Acknowledgement
 ============
