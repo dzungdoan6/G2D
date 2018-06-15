@@ -56,7 +56,7 @@ Usage
 How to install and use condition tool
 ------------------
 
-Video tutorial is [here](https://youtu.be/hCaxfosZYtg)
+Video tutorial is [here](https://youtu.be/TlI6C46e3_0)
 
 1. Press F4 to open Condition Tool
     * Control: Numpad 8 = move up, Numpad 2 = move down, Numpad 5 = select, Numpad 0 / F4 = back
