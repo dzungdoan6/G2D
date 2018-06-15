@@ -1,14 +1,14 @@
 About
 ============
-GTAVision is an open-source tool which enables computer vision researchers to collect the dataset from Grand Theft Auto V. With the capability of accessing to the native functions of the game, researchers could directly interact with the tool while playing the game. In addition, researchers could gather the images rendered by the gameplay camera as well as its exact camera pose within the game coordinate.
+G2D is an open-source tool which enables computer vision researchers to collect the dataset from Grand Theft Auto V. With the capability of accessing to the native functions of the game, researchers could directly interact with the tool while playing the game. In addition, researchers could gather the images rendered by the gameplay camera as well as its exact camera pose within the game coordinate.
 
 
 Description
 ============
 
-GTAVision contains three sub-tools
-1. GTAVision-Condition.asi    : the tool enables users to change game's condition, e.g. time, weather and traffic density
-2. GTAVision-Trajectory.asi   : the tool facilitates users to construct sparse/dense trajectory
+G2D contains three sub-tools
+1. G2D-Condition.asi    : the tool enables users to change game's condition, e.g. time, weather and traffic density
+2. G2D-Trajectory.asi   : the tool facilitates users to construct sparse/dense trajectory
 3. CreateSparseTrajectory.exe : the program creates sparse trajectory, given vertex and vertex order lists.
 
 For more technical detail about the tool, please refer to our report. If you find our tool or our dataset is useful, please cite:
@@ -35,7 +35,7 @@ Pre-built Binaries
 ------------------
 
 1. Download Scripthook V library (http://www.dev-c.com/gtav/scripthookv/). Copy Scripthook.dll and dinput8.dll to GTA V directory
-2. Copy our build/GTAVision-Trajectory.asi and build/GTAVision-Condition.asi to GTA V directory
+2. Copy our build/G2D-Trajectory.asi and build/G2D-Condition.asi to GTA V directory
 3. Launch the game and enjoy!
 
 ------------------
@@ -46,7 +46,7 @@ Build from Source
     + Grand Theft Auto V purchased on Steam.
     + Microsoft Visual Studio. The tool is developed in Microsoft Visual Studio Community 2017, 64-bit Windows 10 Education, but the code should work with older version of those.
     + Scripthook SDK (http://www.dev-c.com/gtav/scripthookv/). Actually the SDK is included already within folder dependencies/
-1. Open GTAVision.sln by Visual Studio.
+1. Open G2D.sln by Visual Studio.
 2. Build the solution.
 
 Usage
@@ -86,7 +86,7 @@ Video tutorial is [here](https://youtu.be/Tf9MXrZ2NFM)
       For more detail about how vertex and vertex order create sparse trajectory, please refer to our document.
 6. Use CreateSparseTrajectory.exe to create sparse trajectory
       * Command-line usage: CreateSparseTrajectory <vertex list> <vertex order list> <sparse trajectory file>
-        <sparse trajectory file> MUST be named trajectory_sparse.txt, if not GTAVision unable to load sparse trajectory.
+        <sparse trajectory file> MUST be named trajectory_sparse.txt, if not G2D unable to load sparse trajectory.
       * Make sure trajectory_sparse.txt is put within GTA V directory.
 7. Open Trajectory Tool, select "Execute Trajectory => Move to Starting Point" to move the player to the 1st point of sparse trajectory
 8. Press "v" to change the view mode of gameplay camera, there are two view modes: third-person and first-person view modes.
