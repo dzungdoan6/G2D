@@ -2,7 +2,7 @@ About
 ============
 G2D is a software that enables capturing videos from Grand Theft Auto V (GTA V), a popular role playing game set in an expansive virtual city. The target users of our software are computer vision researchers who wish to collect hyper-realistic computer-generated imagery of a city from the street level, under controlled 6DOF camera poses and varying environmental conditions (weather, time of day and traffic density). 
 
-[Watch the video here to get the idea what G2D could do](https://youtu.be/cA7G-4YVBeU)
+[WATCH THE VIDEO HERE TO GET THE IDEA WHAT G2D COULD DO](https://youtu.be/cA7G-4YVBeU)
 
 Description
 ============
@@ -57,7 +57,7 @@ Usage
 How to install and use condition tool
 ------------------
 
-Video tutorial is [here](https://youtu.be/TlI6C46e3_0)
+[CLICK HERE TO WATCH THE TUTORIAL VIDEO](https://youtu.be/TlI6C46e3_0)
 
 1. Press F4 to open Condition Tool
     * Control: Numpad 8 = move up, Numpad 2 = move down, Numpad 5 = select, Numpad 0 / F4 = back
@@ -69,7 +69,7 @@ Video tutorial is [here](https://youtu.be/TlI6C46e3_0)
 How to create sparse/dense trajectory
 ------------------
 
-Video tutorial is [here](https://youtu.be/Tf9MXrZ2NFM)
+[CLICK HERE TO WATCH THE TUTORIAL VIDEO](https://youtu.be/Tf9MXrZ2NFM)
 
 1. Within GTA V directory, create folder dataset/images to store the collected dataset.
 2. Press F4 to open Condition Tool ==> change weather & time, and make sure the clock is paused
