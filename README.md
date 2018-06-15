@@ -2,6 +2,7 @@ About
 ============
 G2D is a software that enables capturing videos from Grand Theft Auto V (GTA V), a popular role playing game set in an expansive virtual city. The target users of our software are computer vision researchers who wish to collect hyper-realistic computer-generated imagery of a city from the street level, under controlled 6DOF camera poses and varying environmental conditions (weather, time of day and traffic density).
 
+[![G2D Video](Docs/img/video_thumbnail.png)](https://youtu.be/Hp8Dz-Zek2E)
 
 Description
 ============
