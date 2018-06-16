@@ -115,6 +115,13 @@ Our software and data are only for research and education purposes, any commerci
 
 As a courtesy towards Take-Two Interactive and Rockstar Games, please purchase Grand Theft Auto V, if you use the software and data.
 
+Support
+============
+
+If you have any questions, feel free to contact me via email: dung.doan@adelaide.edu.au
+
+Contributions (bug reports, bug fixes, improvements, etc.) are very welcome and should be submitted in the form of new issues and/or pull requests on GitHub.
+
 Acknowledgement
 ============
 
