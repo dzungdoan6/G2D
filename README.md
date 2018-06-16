@@ -10,14 +10,19 @@ Description
 G2D contains three tools
 1. G2D-Condition.asi    : the tool enables users to change game's condition, e.g. time, weather and traffic density
 2. G2D-Trajectory.asi   : the tool facilitates users to construct sparse/dense trajectory
-3. CreateSparseTrajectory.exe : the program creates sparse trajectory, given vertex and vertex order lists.
+3. CreateSparseTrajectory.exe : the program creates sparse trajectory, given vertex and visitation order lists.
 
 For more technical detail about the software, please refer to our technical document. If you find our software or our dataset is useful, please cite:
 
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+```
+@article{Dzung18G2D,
+  title = {G2D: from GTA to Data,
+  author = {Anh-Dzung Doan and Abdul Mohsi Jawaid and Thanh-Toan Do and Tat-Jun Chin},
+  journal={arXiv},
+  pages = {1--9},
+  year = {2018}
+}
+```
 
 The dataset in our "Sample Application" section could be downloaded [here](https://goo.gl/DNzxHx)
 
