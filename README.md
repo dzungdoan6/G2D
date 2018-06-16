@@ -24,7 +24,7 @@ For more technical detail about the software, please refer to our technical docu
 }
 ```
 
-The dataset in our "Sample Application" section could be downloaded [here](https://goo.gl/DNzxHx)
+The dataset in our "Sample Application" section could be downloaded [HERE](https://goo.gl/DNzxHx)
 
 Installation
 ============
