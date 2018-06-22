@@ -12,7 +12,7 @@ G2D contains three tools
 2. G2D-Trajectory.asi   : the tool facilitates users to construct sparse/dense trajectory
 3. CreateSparseTrajectory.exe : the program creates sparse trajectory, given vertex and visitation order lists.
 
-For more technical detail about the software, please refer to our technical document. If you find our software or our dataset is useful, please cite:
+For more technical detail about the software, please refer to our technical document [HERE](https://arxiv.org/abs/1806.07381). If you find our software or our dataset is useful, please cite:
 
 ```
 @article{Dzung18G2D,
