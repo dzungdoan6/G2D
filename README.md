@@ -18,7 +18,7 @@ For more technical detail about the software, please refer to our technical docu
 @article{Dzung18G2D,
   title = {{G2D}: from {GTA} to {Data}},
   author = {Anh-Dzung Doan and Abdul Mohsi Jawaid and Thanh-Toan Do and Tat-Jun Chin},
-  journal={arXiv},
+  journal={arXiv preprint arXiv:1806.07381},
   pages = {1--9},
   year = {2018}
 }
