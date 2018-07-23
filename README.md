@@ -125,4 +125,4 @@ Contributions (bug reports, bug fixes, improvements, etc.) are very welcome and 
 Acknowledgement
 ============
 
-We would like to thank Alexander Blade for creating Scripthook library and any anonymous people who have been making contribution to that library.
+We would like to thank Alexander Blade for creating Scripthook library and all anonymous people who have been making contribution to that library.
