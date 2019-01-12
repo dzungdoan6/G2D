@@ -103,7 +103,7 @@ How to create sparse/dense trajectory
           + Third-person view mode: Gameplay camera is attached to the eyes of player, so its viewing direction is always forward. Users do not have to do anything.
         
         In every rendered frame, the tool extracts the rotations of the gameplay camera.
-10. When "Execute Sparse Trajectory" is finished, dense trajectory could be found within GTA V direction. The file name is "trajectory_dense.txt"
+10. When "Execute Sparse Trajectory" is finished, dense trajectory could be found within GTA V directory. The file name is "trajectory_dense.txt"
 11. Select "Execute Trajectory => Execute Dense Trajectory" to collect the dataset. 
 
     When "Execute Dense Trajectory" is finished, users could find the collected dataset within dataset/images which is created in Step 1.
