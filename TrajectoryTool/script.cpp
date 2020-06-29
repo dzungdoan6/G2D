@@ -601,6 +601,11 @@ void executeDenseTrajectory()
 		}
 		else
 		{
+
+			// Let the player move to get better graphics for collecting large-scale dataset
+			Entity player_ped = PLAYER::PLAYER_PED_ID();
+			ENTITY::SET_ENTITY_COORDS_NO_OFFSET(player_ped, _trajectory[_traj_idx].player_coord.x, _trajectory[_traj_idx].player_coord.y, _trajectory[_traj_idx].player_coord.z, 0, 0, 1);
+
 			// set 6D pose for our own camera
 			updateCamera(_trajectory[_traj_idx].cam_coord.x, _trajectory[_traj_idx].cam_coord.y, _trajectory[_traj_idx].cam_coord.z,
 				_trajectory[_traj_idx].cam_rot.x, _trajectory[_traj_idx].cam_rot.y, _trajectory[_traj_idx].cam_rot.z);
