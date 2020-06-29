@@ -263,6 +263,7 @@ void handleCreateTrajectoryMenu(std::string menu_name)
 				break;
 			case 1:
 				addVertex(PROTAGONIST);
+				break;
 			case 2:
 				setNotificationText("Need your help for more convenient ways to create trajectory");
 				break;
