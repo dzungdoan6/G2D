@@ -12,6 +12,7 @@
 float _MENU_LINE_WIDTH = 350; // menu width size
 int _current_main_menu_index = 0; // current selection index for main menu
 int _current_weather_menu_index = 0; // current selection index for weather menu
+int _current_time_menu_index = 0; // current selection index for time menu
 int _current_traffic_density_menu_index = 0; // current selection index for traffic density menu
 
 // notification text
@@ -166,21 +167,115 @@ void setNotificationText(std::string str, DWORD time /*= 1500*/, bool isGxtEntry
 	_notification_text_gxt_entry = isGxtEntry;
 }
 
+void handleTimeMenu(std::string menu_name)
+{
+	const int menu_item_number = 3;
+	std::string menu_list[menu_item_number] = { "HOUR FORWARD", "HOUR BACKWARD", "" };
+	DWORD wait_time = 150;
+	while (true)
+	{
+		if (_TIME_PAUSED == true)
+			menu_list[2] = "RESUME CLOCK";
+		else
+			menu_list[2] = "PAUSE CLOCK";
+
+		// timed menu draw, used for pause after active line switch
+		DWORD max_tick_count = GetTickCount() + wait_time;
+		do
+		{
+			// draw menu
+			drawMenuLine(menu_name, _MENU_LINE_WIDTH, 15.0, 18.0, 0.0, 5.0, false, true);
+			for (int i = 0; i < menu_item_number; i++)
+				if (i != _current_time_menu_index)
+					drawMenuLine(menu_list[i], _MENU_LINE_WIDTH, 9.0, 60.0 + i * 36.0, 0.0, 9.0, false, false);
+			drawMenuLine(menu_list[_current_time_menu_index], _MENU_LINE_WIDTH + 1.0, 11.0, 56.0 + _current_time_menu_index * 36.0, 0.0, 7.0, true, false);
+			updateFeatures();
+			WAIT(0);
+		} while (GetTickCount() < max_tick_count);
+		wait_time = 0;
+
+		// listen if users press any buttons
+		bool button_select, button_back, button_up, button_down;
+		getButtonState(&button_select, &button_back, &button_up, &button_down);
+
+		if (button_select) // if select button is pressed
+		{
+			int h, m; // parameters for current "hour" and "minute"
+			h = TIME::GET_CLOCK_HOURS();
+			m = 0; // if you want to get minute, do: m = TIME::GET_CLOCK_MINUTES();
+			char text[32];
+
+			switch (_current_time_menu_index)
+			{
+				// TIME FORWARD
+			case 0:
+				h = (h == 23) ? 0 : h + 1;
+				TIME::SET_CLOCK_TIME(h, m, 0); 
+				sprintf_s(text, "current time %d:%d", h, m);
+				setNotificationText(text);
+				break;
+
+				// TIME BACKWARD
+			case 1:
+				h = (h == 0) ? 23 : h - 1;
+				TIME::SET_CLOCK_TIME(h, m, 0); 
+				sprintf_s(text, "current time = %d:%d", h, m);
+				setNotificationText(text);
+
+				break;
+
+			case 2:
+				if (_TIME_PAUSED == false)
+				{
+					_TIME_PAUSED = true;
+					setNotificationText("Clock is paused");
+				}
+				else
+				{
+					_TIME_PAUSED = false;
+					setNotificationText("Clock is resumed");
+				}
+				TIME::PAUSE_CLOCK(_TIME_PAUSED);
+
+				break;
+			}
+			wait_time = 200;
+		}
+		else
+			if (button_back || switchPressed()) // if back button is pressed
+			{
+				break;
+			}
+			else
+				if (button_up) // if up/down button is pressed
+				{
+
+					if (_current_time_menu_index == 0)
+						_current_time_menu_index = menu_item_number;
+					_current_time_menu_index--;
+					wait_time = 150;
+				}
+				else
+					if (button_down)
+					{
+
+						_current_time_menu_index++;
+						if (_current_time_menu_index == menu_item_number)
+							_current_time_menu_index = 0;
+						wait_time = 150;
+					}
+	}
+}
 void handleWeatherMenu(std::string menu_name)
 {
-	const int menu_item_number = 6;
+	const int menu_item_number = 3;
 
-	std::string menu_list[menu_item_number] = { "DAY", "NIGHT", "CLEAR",  "RAIN", "SNOW", "" };
+	std::string menu_list[menu_item_number] = { "CLEAR",  "RAIN", "SNOW" };
 
 	DWORD wait_time = 150;
 
 	while (true)
 	{
-		if (_TIME_PAUSED == true)
-			menu_list[5] = "RESUME CLOCK";
-		else
-			menu_list[5] = "PAUSE CLOCK";
-
 		// timed menu draw, used for pause after active line switch
 		DWORD max_tick_count = GetTickCount() + wait_time;
 		do
@@ -204,47 +299,23 @@ void handleWeatherMenu(std::string menu_name)
 		{
 			switch (_current_weather_menu_index)
 			{
-				// DAY
-			case 0:
-				TIME::SET_CLOCK_TIME(12, 0, 0); // set time = 12:00
-				break;
-
-				// NIGHT
-			case 1:
-				TIME::SET_CLOCK_TIME(23, 0, 0); // set time = 23:00
 				
-				break;
-
 				// CLEAR
-			case 2:
+			case 0:
 				GAMEPLAY::CLEAR_OVERRIDE_WEATHER();
 				GAMEPLAY::SET_OVERRIDE_WEATHER("CLEAR");
 				break;
 
 				// RAIN
-			case 3:
+			case 1:
 				GAMEPLAY::CLEAR_OVERRIDE_WEATHER();
 				GAMEPLAY::SET_OVERRIDE_WEATHER("THUNDER"); // set "THUNDER" to make heavy rain
 				break;
 
 				// SNOW
-			case 4:
+			case 2:
 				GAMEPLAY::CLEAR_OVERRIDE_WEATHER();
 				GAMEPLAY::SET_OVERRIDE_WEATHER("BLIZZARD"); // set "BLIZZARD" to make heavy snow
-				break;
-			case 5:
-				if (_TIME_PAUSED == false)
-				{
-					_TIME_PAUSED = true;
-					setNotificationText("Clock is paused");
-				}
-				else
-				{
-					_TIME_PAUSED = false;
-					setNotificationText("Clock is resumed");
-				}
-				TIME::PAUSE_CLOCK(_TIME_PAUSED);
-
 				break;
 			}
 			wait_time = 200;
@@ -437,9 +508,9 @@ void teleportToMarker()
 
 void handleMainMenu()
 {
-	const int menu_item_number = 3;
+	const int menu_item_number = 4;
 	std::string menu_name = "CONDITION TOOL";
-	std::string menu_list[menu_item_number] = { "WEATHER & TIME", "VEHICLE & PEDESTRIAN DENSITY", "TELEPORT TO MARKER"};
+	std::string menu_list[menu_item_number] = { "TIME", "WEATHER", "VEHICLE & PEDESTRIAN DENSITY", "TELEPORT TO MARKER"};
 
 	DWORD wait_time = 150;
 	while (true)
@@ -469,12 +540,15 @@ void handleMainMenu()
 			switch (_current_main_menu_index)
 			{
 			case 0:
-				handleWeatherMenu(menu_list[0]); // display weather menu
+				handleTimeMenu(menu_list[0]); // display time menu
 				break;
 			case 1:
-				handleTrafficDensityMenu(menu_list[1]); // display traffic density menu
+				handleWeatherMenu(menu_list[1]); // display weather menu
 				break;
 			case 2:
+				handleTrafficDensityMenu(menu_list[2]); // display traffic density menu
+				break;
+			case 3:
 				teleportToMarker();
 				break;
 			}
