@@ -184,15 +184,25 @@ void getButtonState(bool *select, bool *back, bool *up, bool *down)
 	if (down) *down = IsKeyDown(VK_NUMPAD2);
 }
 
-void addVertex()
+void addVertex(int vertex_src)
 {
 
 	Vector3 coord;
-	bool success = getCoordsFromMarker(coord); // get XYZ location from the marker on the built-in map
-	if (!success)
+	bool success;
+	if (vertex_src == GTA_MAP)
 	{
-		setNotificationText("Please put the marker on the map");
-		return;
+		success = getCoordsFromMarker(coord); // get XYZ location from the marker on the built-in map
+		if (!success)
+		{
+			setNotificationText("Please put the marker on the map");
+			return;
+		}
+	}
+	else
+	{
+		Entity player_ped = PLAYER::PLAYER_PED_ID();
+		coord = ENTITY::GET_ENTITY_COORDS(player_ped, true);
+		success = true;
 	}
 
 	std::ofstream ofile;
@@ -216,8 +226,8 @@ void addVertex()
 
 void handleCreateTrajectoryMenu(std::string menu_name)
 {
-	const int menu_item_number = 2;
-	std::string menu_list[menu_item_number] = { "ADD VERTEX", "..." };
+	const int menu_item_number = 3;
+	std::string menu_list[menu_item_number] = { "ADD VERTEX FROM MARKER ON THE MAP", "ADD VERTEX FROM PROTAGONIST POSITION", "..." };
 
 	DWORD wait_time = 150;
 	
@@ -249,9 +259,11 @@ void handleCreateTrajectoryMenu(std::string menu_name)
 			switch (_current_create_trajectory_menu_index)
 			{
 			case 0:
-				addVertex();
+				addVertex(GTA_MAP);
 				break;
 			case 1:
+				addVertex(PROTAGONIST);
+			case 2:
 				setNotificationText("Need your help for more convenient ways to create trajectory");
 				break;
 			}
@@ -602,7 +614,7 @@ void executeDenseTrajectory()
 		else
 		{
 
-			// Let the player move to get better graphics for collecting large-scale dataset
+			// Let the protagonist move to get better graphics for collecting large-scale dataset
 			Entity player_ped = PLAYER::PLAYER_PED_ID();
 			ENTITY::SET_ENTITY_COORDS_NO_OFFSET(player_ped, _trajectory[_traj_idx].player_coord.x, _trajectory[_traj_idx].player_coord.y, _trajectory[_traj_idx].player_coord.z, 0, 0, 1);
 

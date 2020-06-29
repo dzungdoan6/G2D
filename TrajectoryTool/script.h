@@ -22,6 +22,8 @@
 #define PI 3.14159265359
 #define DIRECTX 1
 #define GDI 2
+#define GTA_MAP 0
+#define PROTAGONIST 1
 
 
 /*********************************************************************/
