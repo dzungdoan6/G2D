@@ -109,7 +109,14 @@ How to create sparse/dense trajectory
 11. Select "Execute Trajectory => Execute Dense Trajectory" to collect the dataset. 
 
     When "Execute Dense Trajectory" is finished, users could find the collected dataset within dataset/images which is created in Step 1.
-    
+
+For developers
+============
+Before diving to G2D code, the good starting point is to learn about Script Hook SDK:
++ Read and understand [Native Trainer](http://www.dev-c.com/gtav/nativetrainer/)
++ Use [list of native functions](http://www.dev-c.com/nativedb/) as a dictionary, many functions do not have a description, hence most of the time you need to guess its meaning.
++ Use [the forum](https://gtaforums.com/topic/717612-v-scriptnative-documentation-and-research/) for any inquiries.
+
 License
 ============
 
