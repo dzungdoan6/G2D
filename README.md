@@ -112,7 +112,7 @@ How to create sparse/dense trajectory
 
 For developers
 ============
-The good starting point is to learn about Script Hook SDK:
+A good starting point is to learn about Script Hook SDK:
 + Read and understand [Native Trainer](http://www.dev-c.com/gtav/nativetrainer/) as much as possible.
 + Use [list of native functions](http://www.dev-c.com/nativedb/) as a dictionary.
 + Use [the forum](https://gtaforums.com/topic/717612-v-scriptnative-documentation-and-research/) for any inquiries.
