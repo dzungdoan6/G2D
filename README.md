@@ -6,7 +6,7 @@ Project page: https://sites.google.com/view/g2d-software/home
 
 
 
-  <a href="https://youtu.be/cA7G-4YVBeU
+  <a align="center" href="https://youtu.be/cA7G-4YVBeU
 " target="_blank"><img src="https://img.youtube.com/vi/cA7G-4YVBeU/0.jpg" 
 alt="IMAGE ALT TEXT HERE" border="10" /></a>
 
