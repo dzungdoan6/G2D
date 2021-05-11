@@ -4,6 +4,8 @@ G2D is a software that enables capturing videos from Grand Theft Auto V (GTA V),
 
 Project page: https://sites.google.com/view/g2d-software/home
 
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/cA7G-4YVBeU/0.jpg)](https://youtu.be/cA7G-4YVBeU)
+
 [WATCH THE VIDEO HERE TO GET THE IDEA WHAT G2D COULD DO](https://youtu.be/cA7G-4YVBeU)
 
 Description
