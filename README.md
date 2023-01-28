@@ -131,7 +131,7 @@ As a courtesy towards Take-Two Interactive and Rockstar Games, please purchase G
 Support
 ============
 
-If you have any questions, feel free to contact me via email: dung.doan@adelaide.edu.au
+If you have any questions, feel free to contact me via email: dzung.doan@adelaide.edu.au
 
 Contributions (bug reports, bug fixes, improvements, etc.) are very welcome and should be submitted in the form of new issues and/or pull requests on GitHub.
 
